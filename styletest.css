@@ -1,26 +1,46 @@
 *{
+	margin:0;
+	padding:0;
 	box-sizing: border-box;
 }
 /* Navigation Bar Styling */
-.navbar ul{
-	overflow:hidden;
-	background-color: #D0D5DD;
-	margin:auto;
-	padding:0;
-	position:relative;
-	text-align: center;
-	max-width: 458px;
 
-	list-style-type: none;
+.navbar{
+	background-color: #D0D5DD;
+	border: 10px transparent;
+	border-radius: 25px; 	/* Gives the navbar a round look */
+	position:sticky; 		/* Apply sticky positioning */
+	top:0;					/* Stick the element to the top of the viewport*/
+	z-index: 100; 			/* Ensure the navbar is above other content */
+	display: flex;
+	max-width: 500px;
+	flex-basis: auto;
+	margin: auto;
+	box-shadow: -1px 1px 10px black;
+}
+.navbar nav{
+	display: flex; /* Define the navbar as a flex box */
+	align-content: center;
+}
+.navbar ul{
+	list-style: none;
+	display: flex;
+	flex-basis: auto;
+	justify-content: space-between;
+	gap:10px;
 }
 
-.navbar li a{
-	float:left;
-	display: inline-block;
+.navbar a{
+	display: block;
 	color: #36393B;
-	padding: 12px 14px;
+	padding: 15px 10px;
 	text-decoration: none;
 	font-family: "Helvetica", sans-serif;
+	font-size: 18px;
+}
+.navbar a:hover{
+	background-color: #f0f0f0; /* Highlights the object when hovered over*/
+
 }
 
 h1 {
@@ -50,11 +70,25 @@ p {
 
 .home{
 	background-color:#D0D5DD;
-	
-
 	padding: 20px;
 }
 .about{
+	padding: 20px;
+	background-color: #D0D5DD;
+}
+.resume{
+	padding: 20px;
+	background-color: #D0D5DD;
+}
+.project{
+	padding: 20px;
+	background-color: #D0D5DD;
+}
+.blog{
+	padding: 20px;
+	background-color: #D0D5DD;
+}
+.contact{
 	padding: 20px;
 	background-color: #D0D5DD;
 }
