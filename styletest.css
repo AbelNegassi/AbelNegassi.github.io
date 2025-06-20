@@ -1,6 +1,6 @@
 *{
-	margin:0;
-	padding:0;
+	margin:0px;
+	padding:0px;
 	box-sizing: border-box;
 }
 /* Navigation Bar Styling */
@@ -42,6 +42,12 @@
 	background-color: #f0f0f0; /* Highlights the object when hovered over*/
 	border-right:3px solid;
 	border-radius: 25px;
+}
+h1{
+	border: 10px solid #4E4B58;
+	border-radius: 25px;
+	background-color: #4E4B58;
+	text-align: left;
 }
 
 
@@ -94,13 +100,29 @@ p {
 	padding: 20px;
 	margin: 20px;
 	background-color: #D0D5DD;
+	border: 10px transparent;
+	border-radius: 25px;
+
 }
 #contact{
 	padding: 20px;
 	margin: 20px;
 	background-color: #D0D5DD;
+	border: 10px transparent;
+	border-radius: 25px;
 }
+.icon{
+	border: 1px hidden;
+	border-radius: 8px;
+	max-width: 50px;
+	max-height: 50px;
+} 
 
-
-
+.skills{
+	color:#4E4B58;
+	font-family: "Helvetica", sans-serif;
+	list-style: none; 
+	display:flex; 
+	justify-content:space-evenly;
+}
 
